@@ -7,19 +7,19 @@ This is the test iOS project for the Zemoga Company.
 The project only has one brach, which is called "main". All of the test can be found on the specified branch.
 
 ## Installation
-The project uses "Cocoapods". To run the project, you must need to run the command 
+The project uses Cocoapods. To run the project, you must need to run the command 
 
 ```bash
 pod install 
 ```
 
-and open the .xcworkspace project.
+Close the .xcodeproj and open the .xcworkspace project.
 
-### Dependencies Used
+## Dependencies Used
 ``` Alamofire ~ '5.0' ```
 
 ## Supported Devices
-The project can be runned on any iOS Device with iOS 11+. It also can be runned on any iPhone Simulator.
+The project can be runned on any iOS Device with iOS 14.1+. It also can be runned on any iPhone Simulator.
 
 ## To be Done
 + Core Data: The project doesn't implement Core Data Storage due to the delivery time of the project
