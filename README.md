@@ -6,7 +6,7 @@ This is the test iOS project for the Zemoga Company.
 
 The project only has one brach, which is called "main". All of the test can be found on the specified branch.
 
-The design patter used in the project is ```VIPR```
+The design patter used in the project is ```VIPER```
 
 ## Installation
 The project uses Cocoapods. To run the project, you must need to run the command 
@@ -26,4 +26,4 @@ The project can be runned on any iOS Device with iOS 14.1+. It also can be runne
 ## To be Done
 + Core Data: The project doesn't implement Core Data Storage due to the delivery time of the project
 + Unit Testing: The project doesn't implement Unit tesing due to the delivery time of the project
-+ The custom collection view cells doesn't use the VIPR design pattern due to the delivery time of the project
++ The custom collection view cells doesn't use the VIPER design pattern due to the delivery time of the project
