@@ -3,29 +3,79 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		475071182820C7D90071834F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475071172820C7D90071834F /* AppDelegate.swift */; };
 		4750711A2820C7D90071834F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475071192820C7D90071834F /* SceneDelegate.swift */; };
-		4750711C2820C7D90071834F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4750711B2820C7D90071834F /* ViewController.swift */; };
-		4750711F2820C7D90071834F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4750711D2820C7D90071834F /* Main.storyboard */; };
-		475071222820C7D90071834F /* Zemoga_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 475071202820C7D90071834F /* Zemoga_Test.xcdatamodeld */; };
 		475071242820C7DD0071834F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 475071232820C7DD0071834F /* Assets.xcassets */; };
 		475071272820C7DD0071834F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475071252820C7DD0071834F /* LaunchScreen.storyboard */; };
+		47507137282234410071834F /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47507136282234400071834F /* BaseService.swift */; };
+		477CF7F928233B28001098A7 /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF7F828233B28001098A7 /* PostResponse.swift */; };
+		477CF7FF28233CFD001098A7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF7FE28233CFD001098A7 /* HomeView.swift */; };
+		477CF80128233D10001098A7 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF80028233D10001098A7 /* HomeInteractor.swift */; };
+		477CF80328233D1B001098A7 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF80228233D1B001098A7 /* HomePresenter.swift */; };
+		477CF80528233D27001098A7 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF80428233D27001098A7 /* HomeRouter.swift */; };
+		477CF80728233D35001098A7 /* HomeDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF80628233D35001098A7 /* HomeDefaultView.swift */; };
+		477CF80928233D4C001098A7 /* HomeDefaultInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF80828233D4B001098A7 /* HomeDefaultInteractor.swift */; };
+		477CF80B28233D5B001098A7 /* HomeDefaultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF80A28233D5B001098A7 /* HomeDefaultPresenter.swift */; };
+		477CF80D28233D69001098A7 /* HomeDefaultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF80C28233D69001098A7 /* HomeDefaultRouter.swift */; };
+		477CF81028233D91001098A7 /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF80F28233D91001098A7 /* HomeModule.swift */; };
+		477CF81428233E80001098A7 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF81328233E80001098A7 /* DetailView.swift */; };
+		477CF81628233E90001098A7 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF81528233E8F001098A7 /* DetailInteractor.swift */; };
+		477CF81828233E9E001098A7 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF81728233E9E001098A7 /* DetailPresenter.swift */; };
+		477CF81A28233EAC001098A7 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF81928233EAC001098A7 /* DetailRouter.swift */; };
+		477CF81C28233EB9001098A7 /* DetailDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF81B28233EB9001098A7 /* DetailDefaultView.swift */; };
+		477CF81E28233EC8001098A7 /* DetailDefaultInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF81D28233EC8001098A7 /* DetailDefaultInteractor.swift */; };
+		477CF82028233EEB001098A7 /* DetailDefaultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF81F28233EEB001098A7 /* DetailDefaultPresenter.swift */; };
+		477CF82228233EFB001098A7 /* DetailDefaultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF82128233EFB001098A7 /* DetailDefaultRouter.swift */; };
+		477CF82528235A11001098A7 /* DetailModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF82428235A10001098A7 /* DetailModule.swift */; };
+		477CF8272823672F001098A7 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF8262823672F001098A7 /* UserResponse.swift */; };
+		477CF82928236C14001098A7 /* CommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CF82828236C14001098A7 /* CommentResponse.swift */; };
+		478AE2822823FF2D005649B7 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478AE2812823FF2D005649B7 /* PostCell.swift */; };
+		478AE2842823FF67005649B7 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478AE2832823FF67005649B7 /* DescriptionCell.swift */; };
+		478AE2862823FF85005649B7 /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478AE2852823FF85005649B7 /* UserInfoCell.swift */; };
+		478AE2882823FFBF005649B7 /* CommentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478AE2872823FFBF005649B7 /* CommentsCell.swift */; };
+		FA0C2BEEA2E998438C8B7578 /* Pods_Zemoga_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D201E28A7DC5F2A248181384 /* Pods_Zemoga_Test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		475071142820C7D90071834F /* Zemoga Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zemoga Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		475071172820C7D90071834F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		475071192820C7D90071834F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4750711B2820C7D90071834F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4750711E2820C7D90071834F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		475071212820C7D90071834F /* Zemoga_Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Zemoga_Test.xcdatamodel; sourceTree = "<group>"; };
 		475071232820C7DD0071834F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		475071262820C7DD0071834F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		475071282820C7DD0071834F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47507136282234400071834F /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		477CF7F828233B28001098A7 /* PostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
+		477CF7FE28233CFD001098A7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		477CF80028233D10001098A7 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		477CF80228233D1B001098A7 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		477CF80428233D27001098A7 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		477CF80628233D35001098A7 /* HomeDefaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDefaultView.swift; sourceTree = "<group>"; };
+		477CF80828233D4B001098A7 /* HomeDefaultInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDefaultInteractor.swift; sourceTree = "<group>"; };
+		477CF80A28233D5B001098A7 /* HomeDefaultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDefaultPresenter.swift; sourceTree = "<group>"; };
+		477CF80C28233D69001098A7 /* HomeDefaultRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDefaultRouter.swift; sourceTree = "<group>"; };
+		477CF80F28233D91001098A7 /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
+		477CF81328233E80001098A7 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		477CF81528233E8F001098A7 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		477CF81728233E9E001098A7 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		477CF81928233EAC001098A7 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		477CF81B28233EB9001098A7 /* DetailDefaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailDefaultView.swift; path = "Zemoga Test/Modules/Detail/Interfaces/DetailDefaultView.swift"; sourceTree = SOURCE_ROOT; };
+		477CF81D28233EC8001098A7 /* DetailDefaultInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDefaultInteractor.swift; sourceTree = "<group>"; };
+		477CF81F28233EEB001098A7 /* DetailDefaultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDefaultPresenter.swift; sourceTree = "<group>"; };
+		477CF82128233EFB001098A7 /* DetailDefaultRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDefaultRouter.swift; sourceTree = "<group>"; };
+		477CF82428235A10001098A7 /* DetailModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModule.swift; sourceTree = "<group>"; };
+		477CF8262823672F001098A7 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		477CF82828236C14001098A7 /* CommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentResponse.swift; sourceTree = "<group>"; };
+		478AE2812823FF2D005649B7 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		478AE2832823FF67005649B7 /* DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
+		478AE2852823FF85005649B7 /* UserInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
+		478AE2872823FFBF005649B7 /* CommentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsCell.swift; sourceTree = "<group>"; };
+		74A9BA7076A533196562B107 /* Pods-Zemoga Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zemoga Test.debug.xcconfig"; path = "Target Support Files/Pods-Zemoga Test/Pods-Zemoga Test.debug.xcconfig"; sourceTree = "<group>"; };
+		D201E28A7DC5F2A248181384 /* Pods_Zemoga_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zemoga_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E16E495532342556CE25CBC3 /* Pods-Zemoga Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zemoga Test.release.xcconfig"; path = "Target Support Files/Pods-Zemoga Test/Pods-Zemoga Test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0C2BEEA2E998438C8B7578 /* Pods_Zemoga_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +95,8 @@
 			children = (
 				475071162820C7D90071834F /* Zemoga Test */,
 				475071152820C7D90071834F /* Products */,
+				694F1BFFC5161AAED836BDE2 /* Pods */,
+				4A4CD26D0FC6C2808FADAF60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +113,150 @@
 			children = (
 				475071172820C7D90071834F /* AppDelegate.swift */,
 				475071192820C7D90071834F /* SceneDelegate.swift */,
-				4750711B2820C7D90071834F /* ViewController.swift */,
-				4750711D2820C7D90071834F /* Main.storyboard */,
+				477CF7FA28233BD4001098A7 /* Modules */,
+				477CF7F328233AD5001098A7 /* Services */,
 				475071232820C7DD0071834F /* Assets.xcassets */,
 				475071252820C7DD0071834F /* LaunchScreen.storyboard */,
 				475071282820C7DD0071834F /* Info.plist */,
-				475071202820C7D90071834F /* Zemoga_Test.xcdatamodeld */,
 			);
 			path = "Zemoga Test";
+			sourceTree = "<group>";
+		};
+		477CF7F328233AD5001098A7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				477CF7F428233ADE001098A7 /* API */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		477CF7F428233ADE001098A7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				477CF7F528233AE9001098A7 /* Entitites */,
+				477CF7F628233AEE001098A7 /* Implementations */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		477CF7F528233AE9001098A7 /* Entitites */ = {
+			isa = PBXGroup;
+			children = (
+				477CF7F828233B28001098A7 /* PostResponse.swift */,
+				477CF8262823672F001098A7 /* UserResponse.swift */,
+				477CF82828236C14001098A7 /* CommentResponse.swift */,
+			);
+			path = Entitites;
+			sourceTree = "<group>";
+		};
+		477CF7F628233AEE001098A7 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				47507136282234400071834F /* BaseService.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		477CF7FA28233BD4001098A7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				477CF7FB28233BF3001098A7 /* Home */,
+				477CF80E28233D72001098A7 /* Detail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		477CF7FB28233BF3001098A7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				477CF82328233F1B001098A7 /* Components */,
+				477CF7FD28233C06001098A7 /* Interfaces */,
+				477CF7FC28233BFF001098A7 /* Implementations */,
+				477CF80F28233D91001098A7 /* HomeModule.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		477CF7FC28233BFF001098A7 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				477CF80628233D35001098A7 /* HomeDefaultView.swift */,
+				477CF80828233D4B001098A7 /* HomeDefaultInteractor.swift */,
+				477CF80A28233D5B001098A7 /* HomeDefaultPresenter.swift */,
+				477CF80C28233D69001098A7 /* HomeDefaultRouter.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		477CF7FD28233C06001098A7 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				477CF7FE28233CFD001098A7 /* HomeView.swift */,
+				477CF80028233D10001098A7 /* HomeInteractor.swift */,
+				477CF80228233D1B001098A7 /* HomePresenter.swift */,
+				477CF80428233D27001098A7 /* HomeRouter.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		477CF80E28233D72001098A7 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				477CF81128233E60001098A7 /* Interfaces */,
+				477CF81228233E67001098A7 /* Implementations */,
+				477CF82428235A10001098A7 /* DetailModule.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		477CF81128233E60001098A7 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				477CF81328233E80001098A7 /* DetailView.swift */,
+				477CF81528233E8F001098A7 /* DetailInteractor.swift */,
+				477CF81728233E9E001098A7 /* DetailPresenter.swift */,
+				477CF81928233EAC001098A7 /* DetailRouter.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		477CF81228233E67001098A7 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				477CF81B28233EB9001098A7 /* DetailDefaultView.swift */,
+				477CF81D28233EC8001098A7 /* DetailDefaultInteractor.swift */,
+				477CF81F28233EEB001098A7 /* DetailDefaultPresenter.swift */,
+				477CF82128233EFB001098A7 /* DetailDefaultRouter.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		477CF82328233F1B001098A7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				478AE2812823FF2D005649B7 /* PostCell.swift */,
+				478AE2832823FF67005649B7 /* DescriptionCell.swift */,
+				478AE2852823FF85005649B7 /* UserInfoCell.swift */,
+				478AE2872823FFBF005649B7 /* CommentsCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4A4CD26D0FC6C2808FADAF60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D201E28A7DC5F2A248181384 /* Pods_Zemoga_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		694F1BFFC5161AAED836BDE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74A9BA7076A533196562B107 /* Pods-Zemoga Test.debug.xcconfig */,
+				E16E495532342556CE25CBC3 /* Pods-Zemoga Test.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +266,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4750712B2820C7DD0071834F /* Build configuration list for PBXNativeTarget "Zemoga Test" */;
 			buildPhases = (
+				47253BC33223809ED8864561 /* [CP] Check Pods Manifest.lock */,
 				475071102820C7D90071834F /* Sources */,
 				475071112820C7D90071834F /* Frameworks */,
 				475071122820C7D90071834F /* Resources */,
+				456458BC5E7B648DB206FDCB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,35 +320,92 @@
 			files = (
 				475071272820C7DD0071834F /* LaunchScreen.storyboard in Resources */,
 				475071242820C7DD0071834F /* Assets.xcassets in Resources */,
-				4750711F2820C7D90071834F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		456458BC5E7B648DB206FDCB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zemoga Test/Pods-Zemoga Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zemoga Test/Pods-Zemoga Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zemoga Test/Pods-Zemoga Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47253BC33223809ED8864561 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zemoga Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		475071102820C7D90071834F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4750711C2820C7D90071834F /* ViewController.swift in Sources */,
+				478AE2822823FF2D005649B7 /* PostCell.swift in Sources */,
+				478AE2882823FFBF005649B7 /* CommentsCell.swift in Sources */,
+				477CF8272823672F001098A7 /* UserResponse.swift in Sources */,
+				477CF80B28233D5B001098A7 /* HomeDefaultPresenter.swift in Sources */,
+				477CF81C28233EB9001098A7 /* DetailDefaultView.swift in Sources */,
+				477CF81428233E80001098A7 /* DetailView.swift in Sources */,
+				477CF81628233E90001098A7 /* DetailInteractor.swift in Sources */,
+				477CF7F928233B28001098A7 /* PostResponse.swift in Sources */,
+				477CF81A28233EAC001098A7 /* DetailRouter.swift in Sources */,
+				478AE2842823FF67005649B7 /* DescriptionCell.swift in Sources */,
 				475071182820C7D90071834F /* AppDelegate.swift in Sources */,
-				475071222820C7D90071834F /* Zemoga_Test.xcdatamodeld in Sources */,
+				477CF80328233D1B001098A7 /* HomePresenter.swift in Sources */,
+				477CF82928236C14001098A7 /* CommentResponse.swift in Sources */,
+				47507137282234410071834F /* BaseService.swift in Sources */,
+				477CF80728233D35001098A7 /* HomeDefaultView.swift in Sources */,
+				477CF80928233D4C001098A7 /* HomeDefaultInteractor.swift in Sources */,
+				477CF81828233E9E001098A7 /* DetailPresenter.swift in Sources */,
+				477CF7FF28233CFD001098A7 /* HomeView.swift in Sources */,
+				477CF81028233D91001098A7 /* HomeModule.swift in Sources */,
+				477CF82528235A11001098A7 /* DetailModule.swift in Sources */,
+				477CF80D28233D69001098A7 /* HomeDefaultRouter.swift in Sources */,
+				477CF80128233D10001098A7 /* HomeInteractor.swift in Sources */,
+				478AE2862823FF85005649B7 /* UserInfoCell.swift in Sources */,
+				477CF81E28233EC8001098A7 /* DetailDefaultInteractor.swift in Sources */,
+				477CF82028233EEB001098A7 /* DetailDefaultPresenter.swift in Sources */,
+				477CF82228233EFB001098A7 /* DetailDefaultRouter.swift in Sources */,
 				4750711A2820C7D90071834F /* SceneDelegate.swift in Sources */,
+				477CF80528233D27001098A7 /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4750711D2820C7D90071834F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4750711E2820C7D90071834F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		475071252820C7DD0071834F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +535,7 @@
 		};
 		4750712C2820C7DD0071834F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74A9BA7076A533196562B107 /* Pods-Zemoga Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,7 +546,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Zemoga-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Zemoga;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,6 +555,7 @@
 		};
 		4750712D2820C7DD0071834F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E16E495532342556CE25CBC3 /* Pods-Zemoga Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,7 +566,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Zemoga-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Zemoga;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -345,19 +595,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		475071202820C7D90071834F /* Zemoga_Test.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				475071212820C7D90071834F /* Zemoga_Test.xcdatamodel */,
-			);
-			currentVersion = 475071212820C7D90071834F /* Zemoga_Test.xcdatamodel */;
-			path = Zemoga_Test.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 4750710C2820C7D90071834F /* Project object */;
 }

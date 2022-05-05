@@ -1,0 +1,6 @@
+framework module Pods_Zemoga_Test {
+  umbrella header "Pods-Zemoga Test-umbrella.h"
+
+  export *
+  module * { export * }
+}
